@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "dist",
+    "target": "ESNext",
+    "module": "ESNext",
+    "baseUrl": ".",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
