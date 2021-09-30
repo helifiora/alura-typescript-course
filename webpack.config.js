@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     entry: './src/app.ts',
@@ -47,6 +48,12 @@ module.exports = {
         },
         compress: true,
         port: 9000
+    },
+    optimization: {
+        minimizer: [
+            '...',
+            new CssMinimizerPlugin()
+        ]
     },
     stats: {
         children: true
