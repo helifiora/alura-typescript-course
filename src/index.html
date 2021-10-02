@@ -2,53 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Negociações</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negociações</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <h1 class="header__title">Curso de Typescript</h1>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Curso de Typescript</h1>
+    </div>
+  </header>
+
+  <section class="section">
+
+    <div class="section__container" style="margin-top: 48px;">
+
+      <h2 class="section__title">
+        Negociações
+      </h2>
+
+      <div id="message-view"></div>
+
+      <form class="form">
+
+        <div class="form-field">
+          <label class="form__label" for="data">Data</label>
+          <input class="form__input" type="date" id="data" required autofocus />
         </div>
-    </header>
 
-    <section class="section">
-
-        <div class="section__container">
-
-            <h2 class="section__title">
-                Negociações
-            </h2>
-
-            <div id="mensagemView"></div>
-
-            <form class="form">
-
-                <div class="form-field">
-                    <label class="form__label" for="data">Data</label>
-                    <input class="form__input" type="date" id="data" required autofocus />
-                </div>
-
-                <div class="form-field">
-                    <label class="form__label" for="quantidade">Quantidade</label>
-                    <input class="form__input" type="number" min="1" step="1" id="quantidade" value="1" required />
-                </div>
-
-                <div class="form-field">
-                    <label class="form__label" for="valor">Valor</label>
-                    <input class="form__input" id="valor" type="number" min="0.01" step="0.01" value="0.0" required />
-                </div>
-
-                <div>
-                    <button class="button__submit" type="submit">Incluir</button>
-                </div>
-            </form>
+        <div class="form-field">
+          <label class="form__label" for="quantidade">Quantidade</label>
+          <input class="form__input" type="number" min="1" step="1" id="quantidade" value="1" required />
         </div>
-    </section>
+
+        <div class="form-field">
+          <label class="form__label" for="valor">Valor</label>
+          <input class="form__input" id="valor" type="number" min="0.01" step="0.01" value="0.0" required />
+        </div>
+
+        <div>
+          <button class="button__submit" type="submit">Incluir</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div id="negotiation-view"></div>
+
 </body>
 
 </html>

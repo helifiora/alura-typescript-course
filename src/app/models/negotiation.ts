@@ -16,4 +16,12 @@ export class Negotiation {
     public getDate (): Date {
       return new Date(this.date.getTime())
     }
+
+    public getQuantity (): number {
+      return this.quantity
+    }
+
+    public getValue (): number {
+      return this.value
+    }
 }
