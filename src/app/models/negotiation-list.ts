@@ -14,4 +14,8 @@ export class NegotiationList {
     public getData (): readonly Negotiation[] {
       return this.data
     }
+
+    public has (negotiation: Negotiation): boolean {
+      return this.data.some(n => n.isEqualTo(negotiation))
+    }
 }

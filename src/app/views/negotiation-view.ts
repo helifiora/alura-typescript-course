@@ -1,8 +1,10 @@
 import { NegotiationList } from '../models/negotiation-list'
 import { DateUtil } from '../utils/date'
+import { escape } from '../utils/escape'
 import { View } from './view'
 
 export class NegotiationView extends View<NegotiationList> {
+  @escape
   protected template (list: NegotiationList): string {
     const data = list.getData()
     return `
